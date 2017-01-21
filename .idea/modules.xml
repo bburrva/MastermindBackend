@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MastermindBackend.iml" filepath="$PROJECT_DIR$/.idea/modules/MastermindBackend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MastermindBackend_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MastermindBackend_main.iml" group="MastermindBackend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MastermindBackend_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MastermindBackend_test.iml" group="MastermindBackend" />
     </modules>
   </component>
 </project>
