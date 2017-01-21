@@ -1,4 +1,4 @@
-package com.theironard;
+package com.theironyard;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
