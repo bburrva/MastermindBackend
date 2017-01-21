@@ -1,7 +1,6 @@
 package com.theironyard.entities;
 
 import javax.persistence.*;
-import java.lang.reflect.Array;
 
 @Entity
 @Table(name = "MastermindGame") //Name of the table being created in the Database
@@ -14,15 +13,15 @@ public class Mastermind {
     int round;
 
     @Column(nullable = false) // What the front end is passing to us as a guess
-    Array [] guesses;
+    int [] guesses;
 
     @Column(nullable = false) // What we return (reds,whites,blanks) based on the guess
-    Array [] checks;
+    int [] checks;
 
     public Mastermind() {
     }
 
-    public Mastermind(int round, Array[] guesses, Array[] checks) {
+    public Mastermind(int round, int[] guesses, int[] checks) {
         this.round = round;
         this.guesses = guesses;
         this.checks = checks;
@@ -40,19 +39,19 @@ public class Mastermind {
         this.round = round;
     }
 
-    public Array[] getGuesses() {
+    public int[] getGuesses() {
         return guesses;
     }
 
-    public void setGuesses(Array[] guesses) {
+    public void setGuesses(int[] guesses) {
         this.guesses = guesses;
     }
 
-    public Array[] getChecks() {
+    public int[] getChecks() {
         return checks;
     }
 
-    public void setChecks(Array[] checks) {
+    public void setChecks(int[] checks) {
         this.checks = checks;
     }
 }
