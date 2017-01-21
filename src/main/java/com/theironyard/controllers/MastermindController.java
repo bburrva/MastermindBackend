@@ -3,13 +3,14 @@ package com.theironyard.controllers;
 import com.theironyard.entities.Mastermind;
 import com.theironyard.services.MastermindRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
-
-@RestController
+//@RestController
+@Controller
 public class MastermindController {
 
     @Autowired
