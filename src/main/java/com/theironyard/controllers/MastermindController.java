@@ -30,6 +30,10 @@ public class MastermindController {
         return ((int)Math.random() * 8) + 1;
     }
 
+//    public static int[] guessChecker() {
+//
+//    }
+
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String home(Model model) {
         model.addAttribute(games.findAll());
